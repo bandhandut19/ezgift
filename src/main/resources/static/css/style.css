@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
 
 :root{
-    --color-primary: #fcc93a;
+    --color-primary: #FA4753;
     --color-primary-dark: rgb(158, 126, 40);
     --color-white: #fff;
     --color-white-dark: rgb(225, 225, 225);
-    --color-black: #000;
+    --color-black: #17181C;
     --color-black-light: rgb(40, 40, 40);
 }
 ::-moz-selection {
