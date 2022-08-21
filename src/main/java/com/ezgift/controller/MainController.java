@@ -344,7 +344,7 @@ public class MainController {
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
 		model.addAttribute("cart", cart);
-		model.addAttribute("title", "Phones");
+		model.addAttribute("title", "GiftCards");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
 		return "phones";
@@ -355,7 +355,7 @@ public class MainController {
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
 		model.addAttribute("cart", cart);
-		model.addAttribute("title", "Laptops");
+		model.addAttribute("title", "Gadgets");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
 		return "laptops";
@@ -366,7 +366,7 @@ public class MainController {
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
 		model.addAttribute("cart", cart);
-		model.addAttribute("title", "Tablets");
+		model.addAttribute("title", "GiftVouchers");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
 		return "tablets";
@@ -377,7 +377,7 @@ public class MainController {
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
 		model.addAttribute("cart", cart);
-		model.addAttribute("title", "Accessories");
+		model.addAttribute("title", "EzGift Special");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
 		return "accessories";
