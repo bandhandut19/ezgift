@@ -1,9 +1,9 @@
-package com.ezgift.dao;
+package com.ezgift.overallrepo;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.ezgift.entities.User;
+import com.ezgift.model.User;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

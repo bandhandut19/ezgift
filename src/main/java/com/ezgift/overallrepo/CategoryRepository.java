@@ -1,8 +1,8 @@
-package com.ezgift.dao;
+package com.ezgift.overallrepo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ezgift.entities.Category;
+import com.ezgift.model.Category;
 
 import java.util.List;
 

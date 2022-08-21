@@ -17,20 +17,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.view.RedirectView;
 
-import com.ezgift.dao.AdminRepository;
-import com.ezgift.dao.CategoryRepository;
-import com.ezgift.dao.CustomerRepository;
-import com.ezgift.dao.ProductsRepository;
-import com.ezgift.dao.ShopOwnerRepository;
-import com.ezgift.dao.ShopRepository;
-import com.ezgift.dao.UserRepository;
-import com.ezgift.entities.Admin;
-import com.ezgift.entities.Category;
-import com.ezgift.entities.Customer;
-import com.ezgift.entities.Product;
-import com.ezgift.entities.Shop;
-import com.ezgift.entities.ShopOwner;
-import com.ezgift.entities.User;
+import com.ezgift.model.Admin;
+import com.ezgift.model.Category;
+import com.ezgift.model.Customer;
+import com.ezgift.model.Product;
+import com.ezgift.model.Shop;
+import com.ezgift.model.ShopOwner;
+import com.ezgift.model.User;
+import com.ezgift.overallrepo.AdminRepository;
+import com.ezgift.overallrepo.CategoryRepository;
+import com.ezgift.overallrepo.CustomerRepository;
+import com.ezgift.overallrepo.ProductsRepository;
+import com.ezgift.overallrepo.ShopOwnerRepository;
+import com.ezgift.overallrepo.ShopRepository;
+import com.ezgift.overallrepo.UserRepository;
 import com.ezgift.utilities.Cart;
 import com.ezgift.utilities.Message;
 
@@ -338,8 +338,8 @@ public class MainController {
 		model.addAttribute("products",allProduct);
 		return "singleshop";
 	}
-	@GetMapping(value = ("/phones"))
-	public String phones(Model model, Principal principal, HttpSession session){
+	@GetMapping(value = ("/giftcards"))
+	public String giftcards(Model model, Principal principal, HttpSession session){
 		List<Product> allProduct = productsRepository.findAll();
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
@@ -347,10 +347,10 @@ public class MainController {
 		model.addAttribute("title", "GiftCards");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
-		return "phones";
+		return "giftcards";
 	}
-	@GetMapping(value = ("/laptops"))
-	public String laptops(Model model, Principal principal, HttpSession session){
+	@GetMapping(value = ("/gadgets"))
+	public String gadgets(Model model, Principal principal, HttpSession session){
 		List<Product> allProduct = productsRepository.findAll();
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
@@ -358,10 +358,10 @@ public class MainController {
 		model.addAttribute("title", "Gadgets");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
-		return "laptops";
+		return "gadgets";
 	}
-	@GetMapping(value = ("/tablets"))
-	public String tablets(Model model, Principal principal, HttpSession session){
+	@GetMapping(value = ("/giftVouchers"))
+	public String giftVouchers(Model model, Principal principal, HttpSession session){
 		List<Product> allProduct = productsRepository.findAll();
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
@@ -369,10 +369,10 @@ public class MainController {
 		model.addAttribute("title", "GiftVouchers");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
-		return "tablets";
+		return "giftVouchers";
 	}
-	@GetMapping(value = ("/accessories"))
-	public String accessories(Model model, Principal principal, HttpSession session){
+	@GetMapping(value = ("/ezgiftspecial"))
+	public String ezgiftspecial(Model model, Principal principal, HttpSession session){
 		List<Product> allProduct = productsRepository.findAll();
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
@@ -380,6 +380,6 @@ public class MainController {
 		model.addAttribute("title", "EzGift Special");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
-		return "accessories";
+		return "ezgiftspecial";
 	}
 }

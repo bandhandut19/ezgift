@@ -1,10 +1,10 @@
-package com.ezgift.dao;
+package com.ezgift.overallrepo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.ezgift.entities.ShopOwner;
+import com.ezgift.model.ShopOwner;
 
 
 public interface ShopOwnerRepository extends JpaRepository<ShopOwner,Integer>{

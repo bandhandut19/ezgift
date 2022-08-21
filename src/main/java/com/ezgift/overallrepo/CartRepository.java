@@ -1,4 +1,4 @@
-package com.ezgift.dao;
+package com.ezgift.overallrepo;
 // package com.mensworld.dao;
 
 // import java.util.List;

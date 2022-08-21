@@ -21,18 +21,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.view.RedirectView;
 
-import com.ezgift.dao.CategoryRepository;
-import com.ezgift.dao.ProductsRepository;
-import com.ezgift.dao.ShopOwnerRepository;
-import com.ezgift.dao.ShopRepository;
-import com.ezgift.dao.UserRepository;
-import com.ezgift.entities.Category;
-import com.ezgift.entities.Coupon;
-import com.ezgift.entities.Order;
-import com.ezgift.entities.Product;
-import com.ezgift.entities.Shop;
-import com.ezgift.entities.ShopOwner;
-import com.ezgift.entities.User;
+import com.ezgift.model.Category;
+import com.ezgift.model.Coupon;
+import com.ezgift.model.Order;
+import com.ezgift.model.Product;
+import com.ezgift.model.Shop;
+import com.ezgift.model.ShopOwner;
+import com.ezgift.model.User;
+import com.ezgift.overallrepo.CategoryRepository;
+import com.ezgift.overallrepo.ProductsRepository;
+import com.ezgift.overallrepo.ShopOwnerRepository;
+import com.ezgift.overallrepo.ShopRepository;
+import com.ezgift.overallrepo.UserRepository;
 import com.ezgift.utilities.Message;
 
 @Controller

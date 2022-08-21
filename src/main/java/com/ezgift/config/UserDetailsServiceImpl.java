@@ -5,10 +5,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.ezgift.dao.CustomerRepository;
-import com.ezgift.dao.UserRepository;
-import com.ezgift.entities.Customer;
-import com.ezgift.entities.User;
+import com.ezgift.model.Customer;
+import com.ezgift.model.User;
+import com.ezgift.overallrepo.CustomerRepository;
+import com.ezgift.overallrepo.UserRepository;
 
 
 public class UserDetailsServiceImpl implements UserDetailsService{

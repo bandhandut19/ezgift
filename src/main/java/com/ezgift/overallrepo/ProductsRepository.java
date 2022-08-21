@@ -1,16 +1,17 @@
-package com.ezgift.dao;
+package com.ezgift.overallrepo;
+
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ezgift.entities.Shop;
+import com.ezgift.model.Product;
 
-public interface ShopRepository extends JpaRepository<Shop, Integer> {
+public interface ProductsRepository extends JpaRepository<Product, Integer> {
     @Override
-    List<Shop> findAll();
+    List<Product> findAll();
     @Override
-    Shop getReferenceById(Integer id);
+    Product getReferenceById(Integer id);
     @Override
     void deleteById(Integer id);
     @Override

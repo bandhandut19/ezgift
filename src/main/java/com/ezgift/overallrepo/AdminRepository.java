@@ -1,10 +1,10 @@
-package com.ezgift.dao;
+package com.ezgift.overallrepo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.ezgift.entities.Admin; 
+import com.ezgift.model.Admin; 
 public interface AdminRepository extends JpaRepository<Admin,Integer>{
 	@Query("select c from Admin c where c.email = :email")
 	public Admin getUserByEmail(@Param("email") String email);

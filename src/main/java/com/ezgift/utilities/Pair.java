@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.ezgift.entities.Product;
+import com.ezgift.model.Product;
 
 // @Entity
 // @Table(name = "pair")

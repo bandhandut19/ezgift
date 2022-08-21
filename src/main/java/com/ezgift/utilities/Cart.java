@@ -12,9 +12,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.ezgift.entities.Coupon;
-import com.ezgift.entities.Product;
-import com.ezgift.entities.Shop;
+import com.ezgift.model.Coupon;
+import com.ezgift.model.Product;
+import com.ezgift.model.Shop;
 
 // @Entity
 // @Table(name = "cart")

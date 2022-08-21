@@ -1,4 +1,4 @@
-package com.ezgift.entities;
+package com.ezgift.model;
 import java.util.List;
 
 import javax.persistence.CascadeType;

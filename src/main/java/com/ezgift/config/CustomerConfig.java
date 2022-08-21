@@ -11,8 +11,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.ezgift.dao.UserRepository;
-import com.ezgift.entities.User;
+import com.ezgift.model.User;
+import com.ezgift.overallrepo.UserRepository;
 
 import org.springframework.security.core.userdetails.UserDetails;
 

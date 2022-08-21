@@ -10,7 +10,7 @@
              </h1><br>
         <div class="columns is-multiline">
             <div th:if="${products!=null}" th:each="product: ${products}">
-                <div th:if="${product.category.name=='Tablet'}">
+                <div th:if="${product.category.name=='GiftVouchers'}">
                     <div class="column">
                         <a th:href="@{/product/{id}(id=${product.id})}">
                             <div class="card">

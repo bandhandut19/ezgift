@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.view.RedirectView;
 
-import com.ezgift.dao.AdminRepository;
-import com.ezgift.dao.CategoryRepository;
-import com.ezgift.dao.OrderRepository;
-import com.ezgift.dao.ShopRepository;
-import com.ezgift.entities.Admin;
-import com.ezgift.entities.Category;
-import com.ezgift.entities.Order;
-import com.ezgift.entities.Shop;
+import com.ezgift.model.Admin;
+import com.ezgift.model.Category;
+import com.ezgift.model.Order;
+import com.ezgift.model.Shop;
+import com.ezgift.overallrepo.AdminRepository;
+import com.ezgift.overallrepo.CategoryRepository;
+import com.ezgift.overallrepo.OrderRepository;
+import com.ezgift.overallrepo.ShopRepository;
 import com.ezgift.utilities.Message;
 
 
