@@ -361,7 +361,7 @@ public class MainController {
 		return "gadgets";
 	}
 	@GetMapping(value = ("/giftvouchers"))
-	public String giftVouchers(Model model, Principal principal, HttpSession session){
+	public String giftvouchers(Model model, Principal principal, HttpSession session){
 		List<Product> allProduct = productsRepository.findAll();
 		Object customer = isLogged(principal);
 		Cart cart = (Cart) session.getAttribute("cart");
@@ -369,7 +369,7 @@ public class MainController {
 		model.addAttribute("title", "GiftVouchers");
 		model.addAttribute("customer", customer);
 		model.addAttribute("products",allProduct);
-		return "giftVouchers";
+		return "giftvouchers";
 	}
 	@GetMapping(value = ("/ezgiftspecial"))
 	public String ezgiftspecial(Model model, Principal principal, HttpSession session){
