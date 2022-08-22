@@ -360,7 +360,7 @@ public class MainController {
 		model.addAttribute("products",allProduct);
 		return "gadgets";
 	}
-	@GetMapping(value = ("/giftVouchers"))
+	@GetMapping(value = ("/giftvouchers"))
 	public String giftVouchers(Model model, Principal principal, HttpSession session){
 		List<Product> allProduct = productsRepository.findAll();
 		Object customer = isLogged(principal);
